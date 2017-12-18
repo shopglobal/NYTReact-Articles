@@ -1,0 +1,27 @@
+{
+  "name": "nyt_react-2017",
+  "version": "1.1.1",
+  "description": "NYT Article Scraper built-with React and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server.js",
+    "client": "cd client && npm run start",
+    "start": "pm2 start server.js && npm run client",
+    "build": "cd client && npm run build",
+    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Allen Evans",
+  "license": "MIT",
+  "devDependencies": {
+    "pm2": "^2.9.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.15.4",
+    "mongoose": "^4.13.4",
+    "react-router-dom": "^4.2.2",
+    "socket.io": "^2.0.4",
+    "socket.io-client": "^2.0.4"
+  }
+}
