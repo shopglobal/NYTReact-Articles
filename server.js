@@ -20,7 +20,7 @@ mongoose.Promise = global.Promise;
 
 // connects to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://45.55.13.138/nytreact",
+  process.env.MONGODB_URI || "mongodb://localhost/nytreact",
   {
     useMongoClient: true
   }
